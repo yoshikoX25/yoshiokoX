@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>全肯定相談室</title>
+    <title>AI全肯定相談室</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>全肯定相談室</h1>
-            <p>ここでは何を言っても大丈夫。あなたの味方です。</p>
+            <h1>AI全肯定相談室</h1>
+            <p>AIがあなたの言葉を優しく受け止めます。</p>
+            <div class="api-key-box">
+                <input type="password" id="api-key" placeholder="ここにOpenAI APIキーを入力" autocomplete="off">
+            </div>
         </header>
         
         <div id="chat-box" class="chat-box">
             <div class="message bot-message">
-                こんにちは。愚痴でも、弱音でも、なんでも吐き出してくださいね。私が全部受け止めますよ。
+                こんにちは。APIキーを入れてから話しかけてくださいね。<br>
+                どんなことでも肯定しますよ。
             </div>
         </div>
 
         <div class="input-area">
-            <input type="text" id="user-input" placeholder="ここに入力してください..." autocomplete="off">
+            <input type="text" id="user-input" placeholder="今どんな気持ちですか？" autocomplete="off">
             <button id="send-btn">話す</button>
         </div>
     </div>

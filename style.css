@@ -1,0 +1,101 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fdfcf0; /* 生成り色 */
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+header {
+    padding: 20px;
+    background-color: #ffecd1; /* 優しいオレンジ */
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #7d5a5a;
+}
+
+header p {
+    font-size: 0.8rem;
+    color: #8c8c8c;
+    margin-top: 5px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    padding: 12px 18px;
+    border-radius: 20px;
+    max-width: 80%;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.bot-message {
+    background-color: #e0f2f1; /* 優しいミントグリーン */
+    align-self: flex-start;
+    border-bottom-left-radius: 2px;
+}
+
+.user-message {
+    background-color: #ffdde1; /* 淡いピンク */
+    align-self: flex-end;
+    border-bottom-right-radius: 2px;
+}
+
+.input-area {
+    padding: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #ffb7b2;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff9e99;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
